@@ -60,3 +60,18 @@ Table vw_sales_fact {
 Ref: vw_customers.customer_id < vw_sales_fact.customer_id
 Ref: vw_products.product_id < vw_sales_fact.product_id
 Ref: vw_sellers.seller_id < vw_sales_fact.seller_id
+
+## 🚀 Key Implementation Steps
+
+### 1. Data Staging & Preprocessing
+* **Handling Missing Data:** Enforced structural data integrity using conditional `COALESCE` statements to dynamically handle missing categorical entries in product attributes and locations (e.g., replacing nulls with `'unknown'`).
+* **Geospatial Optimization:** Generated localized geographic centroids using coordinate averaging (`AVG`) grouped by zip code prefix to dramatically accelerate geospatial mapping processing times in the BI layer.
+* **Consistency Control:** Implemented unique constraints and surrogate keys utilizing `IDENTITY(1,1)` to guarantee staging data synchronization and consistency.
+
+### 2. Business Logic Enrichment (SQL Views)
+* **Logistics Performance Tracking:** Engineered robust `CASE WHEN` conditional logic integrated with `DATEDIFF` inside the fact views to continuously evaluate delivery durations and spot customer promise delays in days.
+* **Geocoding Fix via Power Query M Code:** Built an advanced lookup dictionary utilizing `Record.FieldOrDefault` in M-Language to seamlessly substitute 2-character Brazilian state abbreviations with full state names, completely eliminating rendering errors on Bing Maps.
+
+### 3. Business Intelligence Dashboard
+* **Executive-Ready Interface:** Designed a comprehensive, dark-themed corporate dashboard focusing on interactive cross-filtering.
+* **Tracked Metrics:** Delivers high-impact tracking for Core Revenue Trends, Top-Selling Product Categories, Customer Satisfaction (Review Scores), Logistical Latency (Fulfillment Bottlenecks), and Consumer Payment Method Distributions.
