@@ -162,20 +162,16 @@ This solution enables stakeholders to:
 ## 📁 Repository Structure
 
 ```text
-├── SQL Scripts
-│   ├── Staging Layer
-│   ├── Views
-│   ├── Analytical Queries
+Olist-End-to-end-SQL-Analysis
 │
-├── Power BI
-│   ├── Dashboard.pbix
-│   ├── Screenshots
+├── README.md
 │
-├── Documentation
-│   ├── Data Model
-│   ├── Business Requirements
+├── Screenshots/
+├── SQL Scripts/
+├── Power BI/
 │
-└── README.md
+└── docs/
+    └── EXECUTIVE_SUMMARY.md
 ```
 
 ---
@@ -184,7 +180,7 @@ This solution enables stakeholders to:
 
 > ## 📷 Dashboard Preview
 
-![Dashboard Overview](Screenshots/dashboard-overview.png)
+
 
 ---
 
