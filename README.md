@@ -7,7 +7,7 @@
 This project transforms raw operational e-commerce data from the Olist marketplace into a structured analytical solution using SQL Server and Power BI. The pipeline covers data staging and cleansing, Star Schema warehouse design, business logic enrichment, advanced SQL analytics, and interactive dashboard development for executive-level decision making.
 
 ## 📷 Dashboard Preview
-<img src="Screenshots/dashboard-overview.png.png" width="900">
+<img src="Screenshots/dashboard-overview.png.png" width="500">
 
 ---
 
@@ -25,6 +25,9 @@ This project transforms raw operational e-commerce data from the Olist marketpla
 ## 📐 Data Warehouse Architecture (Star Schema)
 
 To optimize analytical query performance and minimize data redundancy, the raw staging tables were transformed into a Star Schema model.
+
+## Schema Preview
+<img src="Screenshots/Schema.png" width="500">
 
 ### Fact Tables
 
