@@ -71,8 +71,8 @@ Ref: vw_sellers.seller_id < vw_sales_fact.seller_id
 
 ## 2. Business Logic Enrichment (SQL Views)
 
-* Logistics Performance Tracking: Engineered robust `CASE WHEN` conditional logic integrated with `DATEDIFF` inside the fact views to continuously evaluate delivery durations and spot customer promise delays in days.
-* Geocoding Fix via Power Query M Code: Built an advanced lookup dictionary utilizing `Record.FieldOrDefault` in M-Language to seamlessly substitute 2-character Brazilian state abbreviations with full state names, completely eliminating rendering errors on Bing Maps.
+* **Logistics Performance Tracking**: Engineered robust `CASE WHEN` conditional logic integrated with `DATEDIFF` inside the fact views to continuously evaluate delivery durations and spot customer promise delays in days.
+* **Geocoding Fix via Power Query M Code**: Built an advanced lookup dictionary utilizing `Record.FieldOrDefault` in M-Language to seamlessly substitute 2-character Brazilian state abbreviations with full state names, completely eliminating rendering errors on Bing Maps.
 
 ## 3. Business Intelligence Dashboard
 
