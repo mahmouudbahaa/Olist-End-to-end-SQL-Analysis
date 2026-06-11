@@ -8,6 +8,7 @@ This project transforms raw operational e-commerce data from the Olist marketpla
 
 ## 📷 Dashboard Preview
 <img src="Screenshots/dashboard-overview.png.png" width="900">
+
 ---
 
 ## 🛠️ Tech Stack & Skills Demonstrated
