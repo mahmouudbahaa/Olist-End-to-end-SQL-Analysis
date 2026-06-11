@@ -168,6 +168,8 @@ For a complete business insights report, see:
 
 [Executive Summary](docs/EXECUTIVE_SUMMARY.md)
 
+---
+
 ## 📁 Repository Structure
 
 ```text
